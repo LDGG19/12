@@ -1,0 +1,53 @@
+#Aquí Comienza la tarea de Interés simple en R y trasladado a HTML
+
+#Primero establecemos el ejercicio
+
+Jose Ignacio presta $1,000.00 a una tasa de interés simple del 24% durante 7 meses. Utilizando año natural, diga Usted el Monto que recibirá al final del préstamo.
+
+#Fórmula Valor Final o Valor Futuro
+
+# Definimos datos de entrada:
+VA=1000 #Valor Presente o Actual
+i=0.27 #Tasa de interés
+r=i/7 #Tasa equivalente del periodo
+t=1 #periodo de la operación
+
+VF=VA*(1+(r*t)) #Calculamos el valor futuro conforme ecuación
+VF
+## [1] 1038.571
+#Fórmula para Valor Presente o Valor Actual
+
+# Definimos datos de entrada:
+VF=1037.571 #Valor Futuro
+i=0.27 #Tasa de interés
+r=i/7 #Tasa equivalente del periodo
+t=1 #periodo de la operación
+
+VP=VF/(1+t*r)
+VP
+## [1] 999.0367
+#Fórmula para Interés Del Periodo Pagado
+
+# Definimos datos de entrada:
+VA = 1000 #Valor Actual
+VF = 1038.571 #Valor Futuro
+i = 0.27 #Tasa de interés
+r= i/7 #Tasa equivalente del periodo
+t=1 #Periodo de la operación
+
+#IP=Interés pagado
+ IP= VF-VA
+ IP
+## [1] 38.571
+#Fórmula para Tiempo
+
+# Definimos datos de entrada:
+VF = 1038.571 #Valor Futuro
+VA = 1000 #Valor Actual
+i = 0.27 #Tasa de interés
+r= i/7 #Tasa equivalente del periodo
+
+t= (VF-VA) / (VA*r)
+t= t*360
+t
+## [1] 359.996
